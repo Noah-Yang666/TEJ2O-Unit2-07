@@ -6,7 +6,6 @@ This module is a Micro:bit MicroPython program that runs a simple cookie clicker
 
 from microbit import *
 
-
 # setting up for game
 display.clear()
 display.show(Image.HAPPY)
