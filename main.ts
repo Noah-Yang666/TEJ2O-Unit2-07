@@ -1,8 +1,24 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: XXX
- * Created on: Sep 2020
- * This program ...
+ * Created by: Noah
+ * Created on: Feb 2026
+ * This program runs a simple cookie clicker game
 */
 
-basic.showString('Hello, World!')
+// setting up for game
+basic.clearScreen()
+basic.showIcon(IconNames.Happy)
+
+let cookies = 0
+
+// starting the game
+input.onButtonPressed(Button.A, function () {
+    cookies = cookies + 1
+    basic.showNumber(cookies)
+})
+
+// resetting game
+input.onButtonPressed(Button.B, function () {
+    cookies = 0
+    basic.clearScreen()
+})
