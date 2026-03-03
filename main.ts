@@ -21,4 +21,5 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     cookies = 0
     basic.clearScreen()
+    basic.showNumber(cookies)
 })
